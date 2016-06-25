@@ -18,8 +18,8 @@
     defer(method);
 })(function($) {
     var $window = $(window),
-        interval = 2000,
-        dotSize = 40,
+        interval = 1000,
+        dotSize = 10,
         $field = $('<div id="life-field"></div>'),
         $dot = $('<div class="dot"></div>'),
         fieldCss = {
@@ -124,7 +124,7 @@
         for (var i = 0; i < size; i++) {
             for (var j = 0; j < size; j++) {
                 var a = neighboursCount(matrix, i, j);
-                if (a == 2) {
+                if (a == 3) {
                     w[i][j] = 1;
                 }
                 if (a > 3 || a < 2) {

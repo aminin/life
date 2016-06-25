@@ -46,7 +46,7 @@ while True:
     for i in range(len(W)):
         for j in range(len(W[i])):
             a = neighbours_count(W, i, j)
-            if a==2:
+            if a==3:
                 w[i][j]=1
             if a > 3 or a < 2:
                 w[i][j]=0
