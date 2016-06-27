@@ -1,4 +1,7 @@
 (function () {
+    if (window.jQuery) {
+       return;
+    }
     var script = document.createElement('script');
     script.type = 'text/javascript';
     script.src = '//yastatic.net/jquery/2.2.3/jquery.min.js';
