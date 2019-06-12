@@ -1,0 +1,32 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index_html:
+  path: /
+  controller: App\Controller\ApiController::indexHtml
+
+api_matrix_list:
+  path: /api/matrix
+  controller: App\Controller\ApiController::index
+  methods: [GET]
+
+api_matrix_create:
+  path: /api/matrix
+  controller: App\Controller\ApiController::create
+  methods: [POST]
+
+api_matrix_show:
+  path: /api/matrix/{id}
+  controller: App\Controller\ApiController::show
+  methods: [GET]
+
+api_matrix_delete:
+  path: /api/matrix/{id}
+  controller: App\Controller\ApiController::destroy
+  methods: [DELETE]
+
+api_matrix_deletee:
+  path: /api/matrix/{id}/destroy
+  controller: App\Controller\ApiController::destroy
+  methods: [GET]
